@@ -1,0 +1,4 @@
+# Optional dependencies for S3 / Google Cloud Storage backends.
+# Install with: py -m pip install -r requirements-cloud.txt
+boto3>=1.35
+google-cloud-storage>=2.18

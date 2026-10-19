@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - STORAGE_ROOT=/app/storage
+      - ENVIRONMENT=development
+      - PUBLIC_BASE_URL=http://localhost:8000
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:5190
+      - FFMPEG_BINARY=ffmpeg
+      - FFPROBE_BINARY=ffprobe
+    volumes:
+      - ./storage:/app/storage
+    restart: unless-stopped
