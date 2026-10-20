@@ -1,16 +1,16 @@
 /* Base styles following existing site aesthetic (hand-written CSS). */
 :root {
-  --bg: #04040f;
-  --panel: rgba(14, 16, 40, 0.92);
-  --surface: rgba(20, 24, 58, 0.9);
-  --primary: #7fa9ff;
-  --accent: #9d8cff;
-  --success: #7de9b5;
-  --warning: #ffd08a;
-  --danger: #ff8f9a;
-  --text: #f5f7ff;
-  --text-muted: rgba(245, 247, 255, 0.64);
-  --border: rgba(127, 169, 255, 0.25);
+  --bg: #eaf4ff;
+  --panel: rgba(255, 255, 255, 0.92);
+  --surface: rgba(236, 245, 255, 0.9);
+  --primary: #2b7fd4;
+  --accent: #5aa9f0;
+  --success: #1f9d63;
+  --warning: #b7791f;
+  --danger: #d64556;
+  --text: #10314f;
+  --text-muted: rgba(16, 49, 79, 0.62);
+  --border: rgba(43, 127, 212, 0.3);
 }
 
 * {
@@ -27,7 +27,7 @@ body,
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #0f1340, var(--bg));
+  background: radial-gradient(circle at top, #ffffff, var(--bg));
   color: var(--text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ a {
 }
 
 code {
-  background: rgba(12, 14, 32, 0.8);
+  background: rgba(213, 233, 255, 0.9);
   padding: 0.125rem 0.375rem;
   border-radius: 0.375rem;
   font-size: 0.875em;
